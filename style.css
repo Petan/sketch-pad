@@ -1,0 +1,19 @@
+#frame > div {
+	width: 30px; 
+	height: 30px;
+	margin: 1px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.clear {
+	background-color: #4d4d4d;
+}
+
+.colored {
+	background-color: #3333cc;
+}
+
+button {
+	margin-right: 70px;
+}

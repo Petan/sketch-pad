@@ -22,9 +22,20 @@ $(document).ready(function(){
 			$(this).addClass('colored').removeClass('clear');
 		}
 
-		else{
-			var opacity = $(this).css('opacity') - 0.2;
+		else if($('#Opacity').is(':checked')) {
+			var opacity = $(this).css('opacity') - 0.1;
 			$(this).css('opacity', opacity);
+		}
+
+		else{
+			$(this).fadeTo(300, 0.4);
+		}
+
+	});
+
+	$('.clear').mouseleave(function(){
+		if($('#Trails').is(':checked')) {
+			$(this).fadeTo(300, 1);
 		}
 	});
 
